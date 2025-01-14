@@ -3,17 +3,13 @@ package com.trendyol.tests;
 import com.trendyol.base.BaseTest;
 import com.trendyol.pages.HomePage;
 import io.qameta.allure.Description;
-import org.apache.logging.log4j.LogManager; // LogManager ekleyin
-
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class HomeTest extends BaseTest {
 
-    private static final Logger logger = LogManager.getLogger(HomeTest.class); // Log4j2 Logger kullanımına geçiş
+    private static final Logger logger = Logger.getLogger(HomeTest.class);
 
     @Test
     @Description("Test to verify if the logo is displayed on the homepage.")
